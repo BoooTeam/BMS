@@ -1,10 +1,10 @@
 import { Button, Col, Input, Row, Form, message } from "antd";
 import React, { useState, useCallback, useEffect } from "react";
 import omit from "omit.js";
-import ItemMap from "./map";
-import LoginContext from "../new/LoginContext";
-import styles from "./index.less";
 import { getFakeCaptcha } from "@/services/login";
+import ItemMap from "./map";
+import LoginContext from "./LoginContext";
+import styles from "./index.less";
 const FormItem = Form.Item;
 
 const getFormItemOptions = ({

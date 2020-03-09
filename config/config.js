@@ -100,18 +100,19 @@ export default {
             },
             {
               path: "/welcome",
-              name: "welcome",
+              name: "首页",
               icon: "smile",
               component: "./Welcome"
             },
             {
               path: "/admin",
-              name: "admin",
+              name: "管理页",
+              authority: ["admin", "teacher", "student"],
               icon: "crown",
               component: "./Admin"
             },
             {
-              name: "list.table-list",
+              name: "表格",
               icon: "table",
               path: "/list",
               component: "./ListTableList"
@@ -173,9 +174,8 @@ export default {
   }, // chainWebpack: webpackPlugin,
   proxy: {
     "/api": {
-      target: "http://127.0.0.1:7001",
+      target: "http://127.0.0.1:7002",
       changeOrigin: true
-      // pathRewrite: { '^/server': '' },
     }
   }
 };

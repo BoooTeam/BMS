@@ -2,7 +2,7 @@ import { Tabs, Form } from "antd";
 import React, { useState } from "react";
 import useMergeValue from "use-merge-value";
 import classNames from "classnames";
-import LoginContext from "../new/LoginContext";
+import LoginContext from "./LoginContext";
 import LoginItem from "./LoginItem";
 import LoginSubmit from "./LoginSubmit";
 import LoginTab from "./LoginTab";

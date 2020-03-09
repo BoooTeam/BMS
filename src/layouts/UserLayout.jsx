@@ -6,7 +6,6 @@ import {
 import { Helmet } from "react-helmet";
 import { Link } from "umi";
 import React from "react";
-import { formatMessage } from "umi-plugin-react/locale";
 import { connect } from "dva";
 import SelectLang from "@/components/SelectLang";
 import logo from "../assets/logo.svg";
@@ -28,7 +27,6 @@ const UserLayout = props => {
   const { breadcrumb } = getMenuData(routes);
   const title = getPageTitle({
     pathname: location.pathname,
-    formatMessage,
     breadcrumb,
     ...props
   });
